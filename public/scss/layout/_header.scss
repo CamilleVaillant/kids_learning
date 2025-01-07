@@ -1,0 +1,27 @@
+@use "../abstract/variable" as v;
+
+
+nav{
+    background-color: v.$primarycolor;
+    display: flex;
+    justify-content: space-between;
+    img{
+        height: 150px;
+    }
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+
+        a{
+            color: white;
+            margin-right: 3rem;
+            font-size: 2rem;
+            transition: 0.25s ease;
+        }
+        a:hover{
+            color: v.$accentcolor;
+        }
+    }
+}

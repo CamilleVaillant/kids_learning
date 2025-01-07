@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code>C:/Users/cpvai/symphonie projet/kids-learning/src/Controller/HomeController.php</code></li>
+        <li>Your template at <code>C:/Users/cpvai/symphonie projet/kids-learning/templates/home/index.html.twig</code></li>
+    </ul>
+</div>
+{% endblock %}
+{% block main %}
+<section class="banner">
+    <h2> Bienvenue sur Kids Learning</h2>
+    <a href="">Découvrir</a>
+</section>    
+<p>Aujourd'hui on est le : {{ "now"|date("d/m/Y") }}</p>
+<section class="temoin">
+    <h3>Témoignages</h3>
+    <p>Découvrez ce que les gens disent de notre plateforme</p>
+    <div class="comment">
+        <article>
+            <div><img src={{ asset('images/parent-1.jpeg')}} alt="parent"></div>
+            <p>"Ma fille a beaucoup appris grâce à cette plateforme. Les cours sont trés informatifs et faciles à comprendre."</p>
+            <h4>- Thérèse Dupont</h4>
+        </article>
+        <article>
+            <div><img src={{ asset('images/parent-2.jpeg')}} alt="parent"></div>
+            <p>"Une excellente ressource pour l'apprentissage en ligne. je la recommande à tout le monde!"</p>
+            <h4>- Jean Curie</h4>
+        </article>
+        <article>
+            <div><img src={{ asset('images/parent-3.jpeg')}} alt="parent"></div>
+            <p>"Les ressources disponibles sont trés utiles et variées. une plateforme indispensable pour l'éducation."</p>
+            <h4>- Albert Dorne</h4>
+        </article>
+    </div>
+</section>
+
+{% endblock %}

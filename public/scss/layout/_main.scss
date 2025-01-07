@@ -1,0 +1,10 @@
+@use "../abstract/variable" as v;
+
+.banner{
+    background-image: url(../images/banner.jpeg);
+    background-position: center;
+    background-size: cover;
+    h2{
+        font-size: 6rem;
+    }
+}

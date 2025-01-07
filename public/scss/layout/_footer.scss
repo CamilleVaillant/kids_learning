@@ -1,0 +1,23 @@
+@use "../abstract/variable" as v;
+
+
+.footer{
+    background-color: v.$primarycolor;
+    text-align: center;
+    color: white;
+    li{
+        padding: 2rem ;
+        font-size: 1.5rem;
+        img{
+            height: 150px;
+        }
+        a{
+            color: white;
+            transition: 0.25s ease;
+        }
+        a:hover{
+            color: v.$accentcolor;
+        }
+    }
+       
+}
