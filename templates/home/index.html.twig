@@ -19,31 +19,32 @@
 </div>
 {% endblock %}
 {% block main %}
-<section class="banner">
-    <h2> Bienvenue sur Kids Learning</h2>
-    <a href="">Découvrir</a>
-</section>    
-<p>Aujourd'hui on est le : {{ "now"|date("d/m/Y") }}</p>
-<section class="temoin">
-    <h3>Témoignages</h3>
-    <p>Découvrez ce que les gens disent de notre plateforme</p>
-    <div class="comment">
-        <article>
-            <div><img src={{ asset('images/parent-1.jpeg')}} alt="parent"></div>
-            <p>"Ma fille a beaucoup appris grâce à cette plateforme. Les cours sont trés informatifs et faciles à comprendre."</p>
-            <h4>- Thérèse Dupont</h4>
-        </article>
-        <article>
-            <div><img src={{ asset('images/parent-2.jpeg')}} alt="parent"></div>
-            <p>"Une excellente ressource pour l'apprentissage en ligne. je la recommande à tout le monde!"</p>
-            <h4>- Jean Curie</h4>
-        </article>
-        <article>
-            <div><img src={{ asset('images/parent-3.jpeg')}} alt="parent"></div>
-            <p>"Les ressources disponibles sont trés utiles et variées. une plateforme indispensable pour l'éducation."</p>
-            <h4>- Albert Dorne</h4>
-        </article>
-    </div>
-</section>
-
+<main id="main">
+    <section class="banner">
+        <h2> Bienvenue sur Kids <span>Learning</span></h2>
+        <a href="">Découvrir</a>
+    </section>    
+    <p class="date">Aujourd'hui on est le : {{ "now"|date("d/m/Y") }}</p>
+    <section class="temoin">
+        <h3>Témoignages</h3>
+        <p>Découvrez ce que les gens disent de notre plateforme</p>
+        <div class="comment">
+            <article>
+                <div><img src={{ asset('images/parent-1.jpeg')}} alt="parent"></div>
+                <p>"Ma fille a beaucoup appris grâce à cette plateforme. Les cours sont trés informatifs et faciles à comprendre."</p>
+                <h4>- Thérèse Dupont</h4>
+            </article>
+            <article>
+                <div><img src={{ asset('images/parent-2.jpeg')}} alt="parent"></div>
+                <p>"Une excellente ressource pour l'apprentissage en ligne. je la recommande à tout le monde!"</p>
+                <h4>- Jean Curie</h4>
+            </article>
+            <article>
+                <div><img src={{ asset('images/parent-3.jpeg')}} alt="parent"></div>
+                <p>"Les ressources disponibles sont trés utiles et variées. une plateforme indispensable pour l'éducation."</p>
+                <h4>- Albert Dorne</h4>
+            </article>
+        </div>
+    </section>
+</main>
 {% endblock %}

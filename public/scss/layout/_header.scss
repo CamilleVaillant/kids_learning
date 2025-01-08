@@ -19,9 +19,17 @@ nav{
             margin-right: 3rem;
             font-size: 2rem;
             transition: 0.25s ease;
+            
+           
         }
         a:hover{
             color: v.$accentcolor;
         }
+        
     }
+    .active{
+        background-color: red;
+    }
+    
+    
 }

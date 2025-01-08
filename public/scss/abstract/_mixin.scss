@@ -5,3 +5,12 @@
     align-items: $align;
     flex-wrap: $wrap;
 }
+
+@mixin button($bg-color:#f24d3b,$color:white,$padding:1rem 2rem,$border:1px solid #f24d3b,$b-radius:10px,$transition:0.25s ease){
+    background-color: $bg-color;
+    color: $color;
+    padding: $padding;
+    border: $border;
+    border-radius: $b-radius;
+    transition: $transition;
+}

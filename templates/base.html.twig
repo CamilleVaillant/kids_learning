@@ -13,6 +13,8 @@
         <link rel="stylesheet" href={{ asset('css/all.css')}}>
         <link rel="stylesheet" href= {{ asset('css/style.css')}}>
        
+       
+       
 
     </head>
     <body>
@@ -20,10 +22,10 @@
         <nav>
             <img src={{ asset('images/Logo.png')}} alt="logo">
             <ul>
-                <li><a href={{ path("app_home")}}>Accueil</a></li>
-                <li><a href={{ path("app_cours")}}>Cours</a></li>
-                <li><a href={{ path("app_ressources")}}>Ressources</a></li>
-                <li><a href={{ path("app_contact")}}>Contact</a></li>
+                <li><a class="{% if app.request.attributes.get('_route') == 'app_home'%}active{% endif %}" href={{ path("app_home")}}>Accueil</a></li>
+                <li><a class="{% if app.request.attributes.get('_route') == 'app_cours'%}active{% endif %}" href={{ path("app_cours")}}>Cours</a></li>
+                <li><a class="{% if app.request.attributes.get('_route') == 'app_ressources'%}active{% endif %}" href={{ path("app_ressources")}}>Ressources</a></li>
+                <li><a class="{% if app.request.attributes.get('_route') == 'app_contact'%}active{% endif %}" href={{ path("app_contact")}}>Contact</a></li>
             </ul>
         </nav>
         {% block main %}{% endblock %}

@@ -1,10 +1,39 @@
 @use "../abstract/variable" as v;
+@use "../abstract/mixin" as m;
 
 .banner{
-    background-image: url(../images/banner.jpeg);
+    background-image: url(/images/banner.jpeg);
     background-position: center;
     background-size: cover;
-    h2{
-        font-size: 6rem;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+
+    span{
+        display: block;
     }
+    h2{
+        font-size: 8rem;
+        
+        color: v.$primarycolor;
+        text-shadow: 2px 2px 2px rgba($color: #ab9e9e4c, $alpha: 1.0);
+    }
+    a{
+        @include m.button;
+        
+    }
+    a:hover{
+        transform: scale(1.5);
+    }
+}
+.date{
+    text-align: center;
+}
+.temoin{
+    text-align: center;
+    
 }
